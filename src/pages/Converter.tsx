@@ -4,19 +4,17 @@ import { Footer } from '@/components/Footer';
 import { BackgroundEffects } from '@/components/BackgroundEffects';
 import { NavMenu } from '@/components/NavMenu';
 
-const Index = () => {
+export default function Converter() {
   return (
-    <main className="min-h-screen relative">
+    <div className="min-h-screen bg-background relative overflow-hidden">
       <BackgroundEffects />
       <NavMenu />
       
-      <div className="container mx-auto px-4 py-12 md:py-20">
+      <div className="relative z-10 container mx-auto px-4 py-12">
         <Header />
         <CurrencyConverter />
         <Footer />
       </div>
-    </main>
+    </div>
   );
-};
-
-export default Index;
+}
